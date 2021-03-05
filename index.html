@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Android Phone</title>
+    <meta name="author" content="Viorel">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+    <div id="phone">
+        <div id="phone-header">
+            <div id="front-camera">
+                <div id="focus"></div>
+            </div>
+            <div id="clock-screen"></div>
+            <i class="bi bi-battery-full" id="battery"></i>
+            <i class="bi bi-wifi" id="wifi"></i>
+        </div>
+        <div id="taskbar-buttons">
+            <i class="bi bi-calendar-date screen-btn-task" id="cal-btn"></i>
+            <i class="bi bi-files screen-btn-task" id="files-btn"></i>
+            <i class="bi bi-alarm screen-btn-task" id="alarm-btn"></i>
+            <i class="bi bi-calculator screen-btn-task" id="calc-btn"></i>
+            <i class="bi bi-telephone screen-btn-task" id="phone-btn"></i>
+            <i class="bi bi-chat-left-dots screen-btn-task" id="sms-btn"></i>
+            <i class="bi bi-gear screen-btn-task" id="set-btn"></i>
+            <i class="bi bi-camera-fill screen-btn-task" id="imgs-btn"></i>
+        </div>
+        <div id="taskbar-permanent-buttons">
+            <i class="bi bi-border-style" class="perm-btn" id="task-btn"></i>
+            <i class="bi bi-house" class="perm-btn" id="home-btn"></i>
+            <i class="bi bi-arrow-return-left" class="perm-btn" id="back-btn"></i>
+        </div>
+        <div id="clock">
+            <div id="clock-head">
+                <div id="clock-w"></div>
+                <div id="clock-weat">
+                    <i class="bi bi-heart-fill"></i>
+                    <span>☕</span>
+                </div>
+            </div>
+            <div id="clock-body"></div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1118 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ubuntu, sans-serif;
+    background-position: top;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://dl.dropboxusercontent.com/s/tkc2kvv2elho6gk/cover.jpeg");
+    user-select: none;
+}
+
+#phone {
+    border: 4px solid rgba(63, 62, 62, 0.9);
+    border-bottom: 8px solid  rgba(63, 62, 62, 0.8);
+    box-shadow: -2px 4px 5px 8px rgba(0, 2, 0, 0.32), 0 2px 2px 6px rgba(0, 5, 0, 0.32);
+    background-image: url("https://dl.dropboxusercontent.com/s/gwbrjdbuk9dxzvf/back.jpg");
+    background-position: bottom;
+    border-radius: 30px;
+    height: 600px;
+    width: 300px;
+    margin: 20px auto;
+    background-color:#fffefc;
+}
+
+#battery {
+    font-size: 12px;
+    color: #424242;
+    transform: rotate(-90deg);
+    display: block;
+    position: relative;
+    top: -35px;
+    right: 20px;
+    float: right;
+}
+
+#wifi {
+    font-size: 14px;
+    color: #424242;
+    position: relative;
+    top: -37px;
+    right: 21px;
+    float: right;
+}
+
+#phone-btn {
+    color: rgb(94, 170, 98);
+}
+
+#sms-btn {
+    color: rgb(156, 102, 206); 
+}
+
+#set-btn {
+    color: rgb(192, 72, 162);
+}
+
+#imgs-btn {
+    color: rgb(125, 133, 170);
+}
+
+#cal-btn {
+    color: #609ee4;
+}
+
+#files-btn {
+    color: #c29553
+}
+
+#alarm-btn {
+    color: #5fa57c;
+}
+
+#calc-btn {
+    color: #9099a3;
+}
+
+#phone-header {
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    position: relative;
+    width: 292px;
+    height: 25px;
+}
+
+#clock-screen {
+    color: #424242;
+    font-size: 14px;
+    font-weight: bold;
+    left: 10px;
+    top: -18px;
+    width: 50px;
+    position: relative;
+}
+
+#front-camera {
+    background-color: rgba(63, 62, 62, 0.8);;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    height: 20px;
+    width: 30px;
+    margin: auto;
+    z-index: 1000;
+}
+
+#focus {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: .5px solid #fff;
+    background-color: rgb(29, 27, 27);
+    z-index: 600;
+    top: 3.5px;
+    left: 10px;;
+    position: relative;
+}
+
+#taskbar-buttons {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    top: 360px;
+    height: 125px;
+    width: 100%;  
+}
+
+.screen-btn-task {
+    padding: 18px;
+    font-size: 30px;
+    color: #fff;
+}
+
+#taskbar-permanent-buttons {
+    padding: 2px;
+    position: relative;
+    top: 380px;
+    width: 292px;
+    height: 30px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    color: #fafafa;
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gray {
+    color: #424242 !important;
+}
+
+#taskbar-permanent-buttons i {
+    text-align: center;
+}
+
+.app {
+    position: relative;  
+    top: -494px; 
+    left: 0.3px;
+    height: 535px;
+    width: 291px;
+    background-color: #fff;
+    z-index: 2000;
+    animation-duration: 0.3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+     0% {opacity: 0;} 
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+     75% {opacity: 0.75;} 
+    100% {opacity: 1;}
+}
+
+.app-header {
+    margin-top: -3px;
+    height: 223px;
+    background-color: #f2f2f2;
+}
+
+.app-header img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    left: 120px;
+    top: 10px;
+}
+
+#messages h2 {
+    top: 70px;
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+ .app-header p {
+    top: 73px;
+    position: relative;
+    font-size: 14px;
+    background-color: #e6e6e6;
+    border-radius: 28px;
+    width: 132px;
+    margin: auto;
+    text-align: center;
+}
+
+.app-body {
+    background-color: #f2f2f2;
+    height: 315px;
+    overflow-y: auto;
+}
+
+.message-header {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.col-sms-content span {
+    font-size: 11px;
+}
+
+.row-sms {
+   display: grid;
+   padding: 5px;
+   grid-template-columns: 50px auto;
+   height: 80px;
+   width: 100%;
+   background-color: #c4bfbf;
+   border-bottom: 1px solid rgb(52, 153, 211);
+   border-top: 1px solid rgb(52, 153, 211);
+}
+
+.col-sms-avatar {
+    width: 50px;
+}
+
+.col-sms-content {
+    width:auto;
+}
+
+.col-sms-avatar img  {
+    
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.display {
+    height: 30px;
+    width: 252px;
+    border: none;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    padding: 5px;
+    background-color: transparent;
+    color: rgb(60, 61, 63);
+}
+
+#calls h3 {
+    font-size: 18px;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.keyboard {
+    padding: 10px 5px;
+    text-align: center;
+    gap: 10px;
+    height: 208px;
+    display: grid;
+    position: relative;
+    top: 60px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.item-key {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-key p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.item-key p:nth-child(2) {
+    font-size: 10px;
+}
+
+.call {
+    text-align: center;
+    height: 55px;
+}
+
+.delkey {
+    top: 80px;
+    left: 70px;
+    font-size: 22px;
+    color: rgb(187, 58, 58);
+    padding-top: 10px !important;
+    position: relative;
+    visibility: hidden;
+}
+
+#calls .bi-telephone {
+    position: relative;
+    top: 80px;
+    left: 15px; 
+    color: rgb(36, 167, 36);
+    font-size: 32px;
+}
+
+.call-header {
+    background-color: #f2f2f2;
+    padding: 3px;
+    height: 128px;
+} 
+
+.call-body {
+    height: 362px;
+    background-color: #fff;
+} 
+
+.call {
+    height: 80px;
+}
+
+.phone-tabs {
+    height: 26px;
+    position: relative;
+    padding-left: 15px;
+    padding-top: 3px;
+    background-color: #fff;
+}
+
+.phone-tabs  span {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px;
+    color: #494242;
+}
+
+.active-tab {
+    color: #1e74cf !important;
+    font-weight: 800 !important;
+}
+
+.phone-keypad-win {
+    height: 505px;
+    width: 100%;
+}
+
+.phone-recents-win {
+    display: none;
+    height: 505px;
+    width: 100%;
+}
+
+.recent-header {
+    height: 150px;
+    background-color: #f2f2f2;
+}
+
+.recent-header h3 {
+    text-align: center;
+    position: relative;
+    font-size: 25px !important;
+    top: 60px;
+}
+
+.recent-body {
+    height: 375px;
+    overflow-y: auto;
+}
+
+.recent-call {
+    height: 60px;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    background-color: #d6d5d5;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.recent-call-who img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 5px;
+}
+
+.recent-call i {
+    font-size: 35px !important;
+    padding: 6px;
+    position: relative;
+    top: 8px;
+}
+
+.recent-call-nr {
+    padding-left: 8px;
+    position: relative;
+    top: 8px;
+}
+
+.recent-call-nr p:first-child {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.recent-call-nr p:nth-child(2) {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.recent-call-h {
+    font-size: 10px;
+    margin-top: 20px;
+    opacity: .6;
+}
+
+.phone-contacts-win {
+    display: none;
+    height: 505px;
+    width: 100%;
+}
+
+.contacts-header {
+    height: 60px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contacts-body {
+    overflow-y: auto;
+    height: 448px;
+}
+
+.contact-item {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact-item-name {
+    height: 35%;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3688e6;
+}
+
+.contact-item-data {
+    height: 65%;
+    display: grid;
+    grid-template-columns: 40px auto;
+}
+
+.contact-item-data-av img {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 5px;
+    top: 2px;
+    border-radius: 50%;
+}
+
+.contact-item-data-name {
+    padding: 3px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.contact-item-data-name p {
+    position: relative;
+    top: 5px;
+}
+
+.bi-telephone-x {
+    font-size: 30px;
+    position: relative;
+    top: 40px;
+    color: #b61a1a;
+}
+
+.cover {
+    background: rgb(235, 182, 205);
+    background: linear-gradient(90deg, rgb(219, 180, 177) 0%, rgb(136, 180, 231) 100%);
+}
+
+.dialing {
+    background: rgb(235, 182, 205);
+    background: linear-gradient(90deg, rgb(219, 180, 177) 0%, rgb(136, 180, 231) 100%);
+    width: 100%;
+    height: 537px;
+    position: relative;
+    top: -1030px;
+    z-index: 3000;
+    text-align: center;
+    color: #fff;
+    animation-duration: 0.2s;
+    animation-name: slidein;
+}
+
+.dialing-head {
+    height: 40%;
+}
+
+.dialing-body {
+    height: 60%;
+}
+
+.dialing p:first-child {
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.dialing img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    border: 2px solid rgb(226, 214, 214);
+    box-shadow: 2px -2px 10px 5px rgba(0, 2, 0, 0.32);
+}
+
+.dialing-head > p:nth-of-type(2){
+    font-size: 25px;
+    position: relative;
+    top: 10px;
+}
+
+.dialing-head > p:nth-of-type(3) {
+    position: relative;
+    font-size: 14px;
+    top: 20px;
+}
+
+.dialing h3 {
+    font-size: 25px;
+    position: relative;
+    top: 100px;
+    padding: 5px;
+    font-weight: 800;
+}
+
+.calling-pad {
+    height: 180px;
+    width: 250px;
+    margin: auto;
+    position: relative;
+    top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;
+    gap: 10px;
+}
+
+.calling-pad p {
+    font-size: 14px !important;
+}
+
+.item-call i {
+    color: #fff !important;
+    font-size: 14px !important;
+    font-weight: 600;
+}
+
+.set-header {
+    height: 40px;
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+
+.set-header h3 {
+    padding: 10px;
+}
+
+.set-header  img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    top: -35px;
+    right: 8px;
+}
+
+.set-body {
+    background-color: #f2f2f2;
+    position: relative;
+    top: -30px;
+    height: 500px;
+    width: 100%;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.set-body i {
+    font-size: 16px;
+}
+
+.row-set {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 3px;
+}
+
+.row-set p {
+    padding-left: 20px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.icons-settings {
+    color: #424242 !important;
+    font-size: 30px !important;
+}
+
+.bi-wifi {
+    color: rgb(76, 180, 228);
+}
+
+.bi-volume-up {
+    color: rgb(221, 52, 94);
+}
+
+.bi-bell {
+    color: rgb(33, 180, 148);
+}
+
+.bi-phone {
+    color: rgb(153, 142, 79);
+}
+
+.bi-images {
+    color: rgb(52, 86, 102);
+}
+
+.bi-layout-sidebar-inset {
+    color: rgb(46, 150, 89);
+}
+
+.bi-file-lock {
+    color: rgb(134, 54, 68);
+}
+
+.bi-shield-check {
+    color: rgb(40, 126, 126);
+}
+
+.bi-shield-shaded {
+    color: rgb(180, 182, 45);
+}
+
+.bi-geo-alt {
+    color: rgb(184, 57, 131);
+}
+
+.bi-person-circle {
+    color: rgb(71, 103, 117);
+}
+
+.bi-google {
+    color: rgb(179, 40, 93);
+}
+
+.bi-award {
+    color: rgb(62, 79, 233);
+}
+
+.bi-heart {
+    color: rgb(211, 78, 118);
+}
+
+.bi-app{
+    color: rgb(27, 99, 133);
+}
+
+.bi-info-circle {
+    color: rgb(196, 139, 85);
+}
+
+.cal-header {
+    height: 60px;
+    background-color: #f2f2f2;
+}
+
+.cal-header h3 {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #363131;
+    opacity: .6;
+}
+
+.cal-header i {
+    font-size: 25px;
+    float: right;
+    position: relative;
+    right: 10px;
+    top: -33px;
+    color: #2b85ec;
+}
+
+.cal-body {
+    padding-top: 10px;
+    height: 360px;
+    position: relative;
+    top: -15px;
+    display: grid;
+    padding-left: 3px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+} 
+
+.cal-body p {
+    width: 25px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.days {
+    height: 35px;
+    color: rgb(70, 61, 61) !important;
+    opacity: .6;
+    width: 292px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding-left: 5px;
+    font-weight: 600;
+    font-size: 15px;
+    position: relative;
+    top: -8px;
+    padding-top: 15px;
+}
+
+.days p {
+    padding-left: 8px !important;
+    font-size: 15px;
+}
+
+.days p:last-child {
+    color: rgb(245, 76, 76);
+}
+
+.today {
+    color: rgb(81, 97, 190);
+    font-weight: 800 !important;
+    font-size: 16px;
+}
+
+.alarm-header {
+    background-color: #f2f2f2;  
+    height: 140px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.alarm-header h3 {
+    height: 28px;
+    position: relative;
+    top: 46px
+}
+
+.alarm-body {
+    background-color: #f2f2f2; 
+    overflow-y: auto;
+    height: 395px;
+}
+
+.alarm-row {
+    height: 50px;
+    background-color: rgb(207, 198, 191);
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.alarm-row p {
+    width: 50%;
+    height: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    position: relative;
+    top: 15px;
+    padding-left: 10px;
+}
+
+.alarm-onoff {
+    width: 50%;
+    position: relative;
+    height: 30px;
+    top: 10px;
+    display: flex;
+}
+
+.alarm-onoff p {
+    font-size: 12px;
+    height: 15px;
+    position: relative;
+    top: 8px;
+    right: -12px;
+}
+
+.alarm-onoff input {
+    width: 30px;
+    height: 15px;
+    position: relative;
+    top: 5px;
+    right: -10px;
+}
+
+#calculator {
+    background-color: #f2f2f2; 
+}
+
+.calc-header {
+    height: 150px;
+}
+
+.calc-body {
+    height: 328px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    padding-top: 35px;
+    gap: 5px;
+}
+
+.item {
+    display: table;
+    height: 35px; 
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px;
+}
+
+.calc-body p {
+    background-color: hsla(220, 11%, 74%, 0.2);
+    color: #494242;
+    height: 35px;
+    text-align: center;
+    margin-left: 5px;
+    border-radius: 15px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#C {
+    grid-column: 1 / 3;
+}
+
+#C p {
+    color: rgba(71, 182, 197, 0.8);
+}
+
+#backspace p {
+    color: rgba(192, 54, 118, 0.8);
+}
+
+#divide p,
+#multi p,
+#dif p,
+#add p {
+    color: rgb(37, 123, 236);
+}
+
+#result {
+    grid-column: 3 / 5;
+}
+
+#result p {
+    color: rgb(48, 167, 107);
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.display-calc {
+    padding: 10px;
+    width: 292px;
+    border: none;
+    position: relative;
+    top: 100px;
+    outline: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    color: #4d4848;
+    background-color: #f2f2f2; 
+}
+
+.files-header {
+    background-color: #f2f2f2; 
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+    display: flex;
+}
+
+.files-header .bi-folder {
+    color: rgba(192, 54, 118, 0.8);
+}
+
+.bi-caret-right {
+    font-size: 10px;
+    position: relative;
+    top: 5px;
+    color: rgba(148,187,233,1);
+}
+
+.files-header p {
+    color: rgb(115, 149, 250);
+    font-size: 12px;
+    padding-top: 4px;
+    padding-left: 5px;
+}
+
+.files-body {
+    height: 485px;
+    overflow-y: auto;
+}
+
+.file {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 3px; 
+}
+
+.file p {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 6px;
+    color: rgba(0, 2, 0, 0.7);
+}
+
+.file i {
+    color: rgb(41, 104, 175);
+    padding: 2px;
+    font-size: 20px;
+}
+
+.camera-body {
+    background-color: #000;
+    height: 100%;
+}
+
+.camera-body .bi-camera-fill {
+    color: seashell;
+    font-size: 35px;
+    position: relative;
+    top: 460px;
+    left: 125px;
+    opacity: .7;
+}
+
+.camera-body .bi-file-earmark-excel {
+    color: rgb(230, 53, 112);
+    opacity: .2;
+    font-size: 50px;
+    position: relative;
+    top: 200px;
+    left: 65px;
+}
+
+.camera-body .bi-arrow-counterclockwise {
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    left: 190px;
+    top: 455px;
+}
+
+.search {
+    width: 80%;
+    height: 30px;
+    position: relative;
+    top: -420px;
+    margin: auto;
+    background-color: hsla(204, 6%, 100%, 0.9);
+    border-radius: 10px;
+    z-index: 500;
+}
+
+.bi-search {
+    font-size: 18px;
+    padding: 5px;
+    position: relative;
+    top: 2px;
+    color: rgb(29, 101, 235);
+}
+
+.input-search {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 30px;
+    color: #424242;
+    font-weight: 600;
+    font-size: 12px;
+    width: 170px;
+}
+
+.box-search {
+    width: 80%;
+    margin: auto;
+    background-color: hsla(204, 6%, 100%, 0.9);
+    height: 150px;
+    position: relative;
+    top: -238px;
+    border-radius: 10px;
+    visibility: hidden;
+    z-index: 500;
+}
+
+.word-row {
+    height: 28px;
+    margin-bottom: 2px;
+    font-weight: 600;
+    color: #424242;
+    padding: 5px;
+    padding-left: 15px;
+    font-size: 12px;
+}
+
+#clock {
+    background: transparent;
+    width: 80%;
+    margin: auto;
+    height: 130px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    color: rgb(247, 242, 242);
+    font-weight: 800;
+}
+
+#clock-head {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 40%;
+}
+
+#clock-w {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    height: 30px;
+}
+
+#clock-weat {
+    height: 30px;
+    top: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    left: -30px;
+    position: relative;
+}
+
+ #clock-weat i:first-child {
+    padding: 8px;
+    color: rgb(196, 83, 83);
+} 
+
+#clock-body {
+    height: 60px;
+    font-size: 14px;
+    text-align: center;
+}
+
+::-webkit-scrollbar {
+    width: 0;  
+}
